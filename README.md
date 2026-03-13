@@ -18,7 +18,7 @@ The datasets are provided in both standard `CSV` and high-performance `HDF5` for
   * **C (Offset)**: The annual baseline reflectance.
   * **R-squared ($R^2$) & Mean Bias**: Statistical indicators of model fitting accuracy.
   * **N**: Number of valid observations.
-* `brdf_parameters_data...` *(根据你的实际文件名修改)*: The processed BRDF weighting parameters.
+* `brdf_parameters_data...` *(Note: Update this filename to match your actual file)*: The processed BRDF weighting parameters.
 
 ## 🚀 Quick Start (Python)
 
@@ -34,13 +34,3 @@ df_stats = pd.read_hdf(file_path, key="stats")
 # Display the data for the year 2021
 data_2021 = df_stats[df_stats['Year'] == 2021]
 print(data_2021)
-
-## 📝 Citation
-
-If you use this dataset in your research, please cite our paper:
-[Author Names]. (2026). [Our Paper Title]. [Journal Name], [Volume/Issue]. (Under Review)
-Once the paper is accepted for publication, the citation information will be uploaded.
-
-## ✉️ Contact
-
-For any questions regarding the dataset or code, please open an issue in this repository or contact: [ttmmxhz@gmial.com].
